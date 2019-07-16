@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kristin Website </title>
+        <style>
+            body {
+                background: url("https://imgur.com/aPo1aOB");
+                color: teal;
+                padding: 10px;
+                font-family: fantasy;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+                font-family: fantasy;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 150px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+    </head>
+        
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <header>Kristin's Kick Butt Website</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><href="portfolio.html">Portfolio</href></li>
+                </ul>
+            </nav>
+        
+            <main>
+                <div class="sidebar">
+                    <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/52283845_10211474063321409_838816128045154304_n.jpg?_nc_cat=104&_nc_oc=AQlUpxPB7ey6KhWq6I1RTkJrgrBRY8KPkZ2KmYxLP5MYf7Ez2ZQGQe_ZqDA0M4-c8lc&_nc_ht=scontent-dfw5-1.xx&oh=c8393356860853dd1e290a892ab1dcb8&oe=5DEA3B55">
+                </div>
+                
+                <div class="content">
+                    <header>Krisitn Porter</header>
+                    <p>Business Ed Teacher</p>
+                    <section class="interests">
+                        <header>Interests</header>
+                        <ul>
+                            <li>Live Music</li>
+                            <li>Dancing</li>
+                            <li>Friends, Family, Food</li>
+                        </ul>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
