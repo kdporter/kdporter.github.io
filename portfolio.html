@@ -63,7 +63,16 @@
                 border-radius: 30px;
                 border:2px solid black;
             }
-                       }
+            .sidebar2 img {
+                width: 200px;
+                border-radius: 30px;
+                border:2px solid black;
+                margin-right: 25px;
+                padding: 10px;
+                position: relative;
+                top: 4px;
+                right: -835px;
+            }
             .content {
             /* portfolio styles */
             #portfolio {
@@ -92,11 +101,8 @@
             .interests header {
                 font-size: 1.75em;
             }
-            .biography header {
-                font-size: 1.75em;
-            }
         </style>
-    </head>
+     </head>
     
     <body>
         <div id="all-contents">
@@ -107,30 +113,24 @@
                     <li><a href="portfolio.html">Portfolio</a></li>
                 </ul>
             </nav>
+            </div>
             
             <main>
                 <div class="sidebar">
                     <image src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/66705943_10212255295171717_3481800175775645696_n.jpg?_nc_cat=105&_nc_oc=AQly_uc3n87LzOFRBOkz4-v1KzI9CaNdiOdopMBbmpX6gGd-zofT6wFqYOb_HN-1Gcw&_nc_ht=scontent-dfw5-2.xx&oh=559a664d293c835f4a8a4216fa1dded6&oe=5DA510E7"></image>
                 </div>
-                
-                <div class="content">
-                    <header>Kristin Fernandez</header>
-                    <p>Business & Technology Teacher</p>
-                    <section class="interests">
-                        <header>Interests</header>
-                        <ul>
-                            <li>Live Music</li>
-                            <li>Dancing</li>
-                            <li>Friends, Family, Food</li>
-                        </ul>
-                <div class="biography">
-                        <header>Biography</header>
-                        <p>I would like to take this time to introduce myself. My name is Kristin Porter Fernandez. I was born in Texas but raised right here in South Louisiana. I graduated from Comeaux High Shcool in 1994 and ULL in 1999. I began teaching at New Iberia Senior High Shcool and spent 17 years there. The last 2 years I have been teaching at Lafayette Middle School. I am excited to be teaching back at the highschool level here at AHS. I recently got married in April of this year. I have 2 children, 3 step children, 3 grand babies with one on the way. I have lived in the Broussard/Youngsville area for over 35 years. I love live music, dancing, local festivals, working with my churches youth group, and spending quality time with my friends and family. I am looking forward to this school year and can't wait to get to know each of you.</p>
-                    <section class="biography>
-                    </section>
-                    
+                 <div class="sidebar2">
+                    <image src="http://cdn.lhsaa.org/uploads/images/AcadianaHS_logo.png"></image>
                 </div>
+               
+                <div class="content">
+                    <h1>Portfolio</h1>
+                    <ul id="portfolio">
+                    </ul>
+                 </div>
             </main>
         </div>
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
 </html>
